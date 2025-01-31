@@ -7,7 +7,7 @@ public static class UpdateGameEndpoint
     public static void MapUpdateGame(this IEndpointRouteBuilder app, GameStoreData data)
     {
         // PUT /games/1
-        app.MapPut("/games/{id}", (Guid id, UpdateGameDto gameDto) =>
+        app.MapPut("/{id}", (Guid id, UpdateGameDto gameDto) =>
         {
             var existingGame = data.GetGame(id);
 
