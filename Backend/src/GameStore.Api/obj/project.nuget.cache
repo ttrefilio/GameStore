@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "U/7PSH7RW7E=",
+  "success": true,
+  "projectFilePath": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\GameStore.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\minimalapis.extensions\\0.11.0\\minimalapis.extensions.0.11.0.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\minivalidation\\0.8.0\\minivalidation.0.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}

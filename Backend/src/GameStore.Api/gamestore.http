@@ -1,0 +1,34 @@
+GET http://localhost:5025/games
+
+###
+GET http://localhost:5025/games/3007f501-4570-4f0c-9873-9f251e13984c
+
+###
+POST http://localhost:5025/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft II4",
+    "genreId": "0ca91115-8bb0-445b-bd6d-13732d36b9f9",
+    "price": 19.99,
+    "releaseDate": "2011-11-18",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin, ante sed tempor luctus, eros mi vehicula eros, at dictum lectus massa sit amet sem. Integer vestibulum sodales urna, ut condimentum magna."
+}
+
+###
+PUT http://localhost:5025/games/6bb95c42-472c-4051-8e58-573b940ad156
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genreId": "f22f896f-c399-4b66-ad69-04cfed1a2c87",
+    "price": 9.99,
+    "releaseDate": "1992-07-05",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin, ante sed tempor luctus, eros mi vehicula eros, at dictum lectus massa sit amet sem. Integer vestibulum sodales urna, ut condimentum magna."
+}
+
+###
+DELETE http://localhost:5025/games/6b572eb2-6748-4bab-a4c5-22f3fc03e19d
+
+###
+GET http://localhost:5025/genres
