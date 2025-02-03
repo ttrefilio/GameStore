@@ -25,6 +25,7 @@ public static class UpdateGameEndpoint
 
             existingGame.Name = gameDto.Name;
             existingGame.Genre = genre;
+            existingGame.GenreId = genre.Id;
             existingGame.Price = gameDto.Price;
             existingGame.ReleaseDate = gameDto.ReleaseDate;
             existingGame.Description = gameDto.Description;

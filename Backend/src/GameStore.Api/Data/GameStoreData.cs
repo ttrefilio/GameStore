@@ -23,6 +23,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "Street Fighter II",
                 Genre = genres[0],
+                GenreId = genres[0].Id,
                 Price = 19.99m,
                 ReleaseDate = new DateOnly(1992, 7, 5),
                 Description = "Test description"
@@ -31,6 +32,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "Final Fantasy XIV",
                 Genre = genres[3],
+                GenreId = genres[3].Id,
                 Price = 59.99m,
                 ReleaseDate = new DateOnly(2010, 9, 30),
                 Description = "Description 2"
@@ -39,6 +41,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "FIFA 23",
                 Genre = genres[4],
+                GenreId = genres[4].Id,
                 Price = 69.99m,
                 ReleaseDate = new DateOnly(2022, 9, 27),
                 Description = "description 3"
