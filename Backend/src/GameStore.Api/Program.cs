@@ -14,9 +14,6 @@ builder.Services.AddSqlite<GameStoreContext>(connString); // Does the same as th
 //     options => options.UseSqlite(connString)
 // );
 
-builder.Services.AddTransient<GameDataLogger>();
-builder.Services.AddSingleton<GameStoreData>();
-
 #endregion
 
 var app = builder.Build();
@@ -24,6 +21,6 @@ var app = builder.Build();
 app.MapGames();
 app.MapGenres();
 
-app.MigrateDb();
+app.InitializeDb();
 
 app.Run();

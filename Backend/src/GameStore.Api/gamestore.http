@@ -1,22 +1,22 @@
 GET http://localhost:5025/games
 
 ###
-GET http://localhost:5025/games/4c4bb1a9-44b6-4be0-8735-df9a1caef34a
+GET http://localhost:5025/games/65427fc2-daf9-44c9-a32a-d6f12a1fe0c5
 
 ###
 POST http://localhost:5025/games
 Content-Type: application/json
 
 {
-    "name": "Minecraft II4",
-    "genreId": "0ca91115-8bb0-445b-bd6d-13732d36b9f9",
+    "name": "TEST GAME",
+    "genreId": "E36EFC58-CB6B-4D21-B979-7752F9EC7DD1",
     "price": 19.99,
-    "releaseDate": "2011-11-18",
+    "releaseDate": "1992-07-05",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin, ante sed tempor luctus, eros mi vehicula eros, at dictum lectus massa sit amet sem. Integer vestibulum sodales urna, ut condimentum magna."
 }
 
 ###
-PUT http://localhost:5025/games/6bb95c42-472c-4051-8e58-573b940ad156
+PUT http://localhost:5025/games/DCB17722-B350-4B9A-B8A5-0D4A10B1E757
 Content-Type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5025/games/3da04533-8da7-4f7f-9efb-00396ec940e5
+DELETE http://localhost:5025/games/16c5cd5e-7f12-44a5-8bb0-eb27cee5d629
 
 ###
 GET http://localhost:5025/genres
