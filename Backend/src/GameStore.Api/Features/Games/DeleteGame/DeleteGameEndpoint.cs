@@ -9,11 +9,11 @@ public static class DeleteGame
     public static void MapDeleteGame(this IEndpointRouteBuilder app)
     {
         // DELETE /games/1
-        app.MapDelete("/{id}", (Guid id, GameStoreContext dbContext) =>
+        app.MapDelete("/{id}", async (Guid id, GameStoreContext dbContext) =>
         {
-            dbContext.Games
+            await dbContext.Games
                      .Where(game => game.Id == id)
-                     .ExecuteDelete();
+                     .ExecuteDeleteAsync();
 
             return Results.NoContent();
         });
