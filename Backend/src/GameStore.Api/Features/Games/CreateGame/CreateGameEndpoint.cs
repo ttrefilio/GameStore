@@ -11,7 +11,8 @@ public static class CreateGameEndpoint
         // POST /games
         app.MapPost("/", async (
             CreateGameDto gameDto,
-            GameStoreContext dbContext) =>
+            GameStoreContext dbContext,
+            ILogger<Program> logger) =>
         {
             var game = new Game
             {
@@ -25,6 +26,8 @@ public static class CreateGameEndpoint
             dbContext.Games.Add(game);
 
             await dbContext.SaveChangesAsync();
+            
+            logger.LogInformation("Created game {GameName} with price {GamePrice}", game.Name, game.Price);
 
             return Results.CreatedAtRoute(
                 EndpointNames.GetGame,

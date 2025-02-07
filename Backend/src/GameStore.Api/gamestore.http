@@ -28,7 +28,6 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5025/games/ff14b3a9-e62f-4050-9dd1-3c022e3dc9ed
-
+DELETE http://localhost:5025/games/9cc77592-25d8-4c45-9b14-661cc658ee69
 ###
 GET http://localhost:5025/genres
