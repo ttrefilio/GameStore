@@ -1,12 +1,15 @@
 using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
+using GameStore.Api.Shared.ErrorHandling;
+using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
-var builder = WebApplication.CreateBuilder(args);
-
-
 
 #region REGISTER SERVICES HERE
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddProblemDetails()
+                .AddExceptionHandler<GlobalExceptionHandler>();
 
 var connString = builder.Configuration.GetConnectionString("GameStore");
 builder.Services.AddSqlite<GameStoreContext>(connString); // Does the same as the commented code bellow
@@ -14,12 +17,30 @@ builder.Services.AddSqlite<GameStoreContext>(connString); // Does the same as th
 //     options => options.UseSqlite(connString)
 // );
 
+builder.Services.AddHttpLogging(options =>
+{
+    options.LoggingFields = HttpLoggingFields.RequestMethod |
+                            HttpLoggingFields.RequestPath |
+                            HttpLoggingFields.ResponseStatusCode |
+                            HttpLoggingFields.Duration;
+    options.CombineLogs = true;
+});
 #endregion
 
 var app = builder.Build();
 
 app.MapGames();
 app.MapGenres();
+
+app.UseHttpLogging();
+// app.UseMiddleware<RequestTimingMiddleware>();
+
+if(!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler();
+}
+
+app.UseStatusCodePages();
 
 await app.InitializeDbAsync();
 

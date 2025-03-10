@@ -1,4 +1,4 @@
-GET http://localhost:5025/games
+GET http://localhost:5025/games?name=final
 
 ###
 GET http://localhost:5025/games/65427fc2-daf9-44c9-a32a-d6f12a1fe0c5
@@ -8,7 +8,7 @@ POST http://localhost:5025/games
 Content-Type: application/json
 
 {
-    "name": "TEST GAME",
+    "name": "TEST GAME 8",
     "genreId": "E36EFC58-CB6B-4D21-B979-7752F9EC7DD1",
     "price": 19.99,
     "releaseDate": "1992-07-05",
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5025/games/ff14b3a9-e62f-4050-9dd1-3c022e3dc9ed
+PUT http://localhost:5025/games/df7d46ef-c5c4-4275-b980-88f4bdd1ec7b
 Content-Type: application/json
 
 {
