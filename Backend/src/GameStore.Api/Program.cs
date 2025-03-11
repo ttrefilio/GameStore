@@ -25,6 +25,9 @@ builder.Services.AddHttpLogging(options =>
                             HttpLoggingFields.Duration;
     options.CombineLogs = true;
 });
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 #endregion
 
 var app = builder.Build();
@@ -35,7 +38,11 @@ app.MapGenres();
 app.UseHttpLogging();
 // app.UseMiddleware<RequestTimingMiddleware>();
 
-if(!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+}
+else
 {
     app.UseExceptionHandler();
 }
