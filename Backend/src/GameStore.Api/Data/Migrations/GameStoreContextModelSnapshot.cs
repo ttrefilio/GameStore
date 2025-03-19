@@ -30,6 +30,10 @@ namespace GameStore.Api.Data.Migrations
                     b.Property<Guid>("GenreId")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ImageUri")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");

@@ -134,3 +134,4 @@ D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\D
 D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.staticwebassets.runtime.json

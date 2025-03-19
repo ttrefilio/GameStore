@@ -24,7 +24,8 @@ public static class GetGameEndpoint
                     game.GenreId,
                     game.Price,
                     game.ReleaseDate,
-                    game.Description
+                    game.Description,
+                    game.ImageUri
                 )
             );
         })

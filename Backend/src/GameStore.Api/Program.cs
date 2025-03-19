@@ -2,6 +2,7 @@ using GameStore.Api.Data;
 using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
 using GameStore.Api.Shared.ErrorHandling;
+using GameStore.Api.Shared.FileUpload;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,9 +29,13 @@ builder.Services.AddHttpLogging(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddHttpContextAccessor().AddSingleton<FileUploader>();
 #endregion
 
 var app = builder.Build();
+
+app.UseStaticFiles();
 
 app.MapGames();
 app.MapGenres();

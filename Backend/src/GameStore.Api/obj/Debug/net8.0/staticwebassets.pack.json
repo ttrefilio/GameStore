@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\5d4eb00e-fb69-43fc-8386-e6f15d700650.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\5d4eb00e-fb69-43fc-8386-e6f15d700650.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameStore.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GameStore.Api.props",
+      "PackagePath": "build\\GameStore.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GameStore.Api.props",
+      "PackagePath": "buildMultiTargeting\\GameStore.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GameStore.Api.props",
+      "PackagePath": "buildTransitive\\GameStore.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
