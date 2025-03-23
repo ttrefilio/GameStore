@@ -31,6 +31,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpContextAccessor().AddSingleton<FileUploader>();
+
+builder.Services.AddAuthentication()
+                .AddJwtBearer(options =>
+                {
+                    options.MapInboundClaims = false;
+                });
 #endregion
 
 var app = builder.Build();

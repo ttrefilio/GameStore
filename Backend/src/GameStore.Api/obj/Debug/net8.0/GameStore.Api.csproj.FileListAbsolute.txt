@@ -135,3 +135,11 @@ D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\D
 D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\GameStore.Api.staticwebassets.runtime.json
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+d:\Training\DotnetCloudDeveloper\repos\GameStore\Backend\src\GameStore.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

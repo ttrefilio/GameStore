@@ -1,8 +1,32 @@
 {
   "Files": [
     {
-      "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\5d4eb00e-fb69-43fc-8386-e6f15d700650.jpg",
+      "Id": "d:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\4f84888a-673b-499a-bd62-44bdb0fd8618.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\4f84888a-673b-499a-bd62-44bdb0fd8618.jpg"
+    },
+    {
+      "Id": "d:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\5d4eb00e-fb69-43fc-8386-e6f15d700650.jpg",
       "PackagePath": "staticwebassets\\GameImages\\5d4eb00e-fb69-43fc-8386-e6f15d700650.jpg"
+    },
+    {
+      "Id": "d:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\7950bb08-3079-4bde-a739-034239575b15.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\7950bb08-3079-4bde-a739-034239575b15.jpg"
+    },
+    {
+      "Id": "d:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\9c5d37ae-9d20-4597-9313-f50511ebb7c2.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\9c5d37ae-9d20-4597-9313-f50511ebb7c2.jpg"
+    },
+    {
+      "Id": "d:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\c33e373e-4e42-414c-a754-e299c21224d0.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\c33e373e-4e42-414c-a754-e299c21224d0.jpg"
+    },
+    {
+      "Id": "d:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\e0ff8f77-70a9-4201-9213-f8a05aa5d6b2.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\e0ff8f77-70a9-4201-9213-f8a05aa5d6b2.jpg"
+    },
+    {
+      "Id": "d:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\efe8ee38-924f-4ab0-aba8-712bde39814a.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\efe8ee38-924f-4ab0-aba8-712bde39814a.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameStore.Api.Microsoft.AspNetCore.StaticWebAssets.props",
