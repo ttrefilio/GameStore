@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Features\Baskets\Authorization\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
