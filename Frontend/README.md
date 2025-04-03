@@ -1,1 +1,0 @@
-# Game Store Frontend

@@ -1,12 +1,20 @@
 {
   "Files": [
     {
+      "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\0644dcdd-118c-450b-9fc3-6734739b2157.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\0644dcdd-118c-450b-9fc3-6734739b2157.jpg"
+    },
+    {
       "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\4f84888a-673b-499a-bd62-44bdb0fd8618.jpg",
       "PackagePath": "staticwebassets\\GameImages\\4f84888a-673b-499a-bd62-44bdb0fd8618.jpg"
     },
     {
       "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\5d4eb00e-fb69-43fc-8386-e6f15d700650.jpg",
       "PackagePath": "staticwebassets\\GameImages\\5d4eb00e-fb69-43fc-8386-e6f15d700650.jpg"
+    },
+    {
+      "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\602f3efc-65ac-4674-8d96-737756efcfdf.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\602f3efc-65ac-4674-8d96-737756efcfdf.jpg"
     },
     {
       "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\7950bb08-3079-4bde-a739-034239575b15.jpg",
