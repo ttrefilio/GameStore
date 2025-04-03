@@ -44,11 +44,11 @@ public static class GetBasketEndoint
                 basket.Items.Select(item => new BasketItemDto(
                     item.GameId,
                     item.Game!.Name,
-                    item.Game.Price,
+                    item.Game!.Price,
                     item.Quantity,
-                    item.Game.ImageUri
+                    item.Game!.ImageUri
                 ))
-                .OrderBy(item => item.name));
+                .OrderBy(item => item.Name));
 
             return Results.Ok(dto);
         });

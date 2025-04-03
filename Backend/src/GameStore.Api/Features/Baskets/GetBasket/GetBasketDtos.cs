@@ -1,7 +1,7 @@
 namespace GameStore.Api.Features.Baskets.GetBasket;
 
 public record class BasketDto(
-    Guid CustomerId, 
+    Guid CustomerId,
     IEnumerable<BasketItemDto> Items
 )
 {
@@ -9,9 +9,9 @@ public record class BasketDto(
 }
 
 public record class BasketItemDto(
-    Guid Id, 
-    string name,
+    Guid Id,
+    string Name,
     decimal Price,
     int Quantity,
-    string ImageUrl
+    string ImageUri
 );

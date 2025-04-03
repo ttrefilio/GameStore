@@ -1,0 +1,68 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims;
+@using System.Security.Principal;
+@using System.Security.Cryptography
+@using System.Text
+@using System.IdentityModel.Tokens.Jwt
+@inject NavigationManager Navigation
+
+<AuthorizeView>
+    <Authorized>
+        <div class="dropdown">
+            <a class="link-light text-decoration-none dropdown-toggle" href="#" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="@GetImageUrl(@context.User.Identity)" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">@context.User.Identity?.Name</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <form method="post" action="authentication/logout">
+                        <AntiforgeryToken />
+                        <button type="submit" class="dropdown-item">Log out</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <a href="authentication/login" class="btn btn-warning">Login</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private string? GetImageUrl(IIdentity? identity)
+    {
+        if (identity is null)
+        {
+            return null;
+        }
+
+        var email = ((ClaimsIdentity)identity).FindFirst(JwtRegisteredClaimNames.Email)?.Value;
+
+        if (string.IsNullOrEmpty(email))
+        {
+            return null;
+        }
+
+        return $"https://www.gravatar.com/avatar/{ComputeSha256Hash(email)}?d=retro";
+    }
+
+    private static string ComputeSha256Hash(string rawData)
+    {
+        // Create a SHA256   
+        // ComputeHash - returns byte array  
+        byte[] bytes = SHA256.HashData(Encoding.UTF8.GetBytes(rawData));
+
+        // Convert byte array to a string   
+        StringBuilder builder = new();
+        for (int i = 0; i < bytes.Length; i++)
+        {
+            builder.Append(bytes[i].ToString("x2"));
+        }
+        return builder.ToString();
+    }    
+}

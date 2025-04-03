@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "NRlQOosFCvI=",
+  "success": true,
+  "projectFilePath": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Frontend\\src\\GameStore.Frontend\\GameStore.Frontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\8.0.10\\microsoft.aspnetcore.authentication.openidconnect.8.0.10.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\8.0.8\\microsoft.aspnetcore.components.webassembly.server.8.0.8.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.1.2\\microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.1.2\\microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.identitymodel.logging\\7.1.2\\microsoft.identitymodel.logging.7.1.2.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
+    "C:\\Users\\ttref\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
