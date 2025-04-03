@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HTkOmts8limxUbW6Ypm+o/F46jS2QnSTfagJqjbSJv0=",
+  "Hash": "i91kBMuyzwFaA99+AFgYjXGeKLFTBSx3oMJjNX6HGd8=",
   "Source": "GameStore.Api",
   "BasePath": "_content/GameStore.Api",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\GameImages\\c33e373e-4e42-414c-a754-e299c21224d0.jpg"
+    },
+    {
+      "Identity": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\da921686-8ae6-41fa-ba69-2e5d91786e00.jpg",
+      "SourceId": "GameStore.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\",
+      "BasePath": "_content/GameStore.Api",
+      "RelativePath": "GameImages/da921686-8ae6-41fa-ba69-2e5d91786e00.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\GameImages\\da921686-8ae6-41fa-ba69-2e5d91786e00.jpg"
     },
     {
       "Identity": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\e0ff8f77-70a9-4201-9213-f8a05aa5d6b2.jpg",

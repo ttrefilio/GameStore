@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\GameImages\\c33e373e-4e42-414c-a754-e299c21224d0.jpg"
     },
     {
+      "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\da921686-8ae6-41fa-ba69-2e5d91786e00.jpg",
+      "PackagePath": "staticwebassets\\GameImages\\da921686-8ae6-41fa-ba69-2e5d91786e00.jpg"
+    },
+    {
       "Id": "D:\\Training\\DotnetCloudDeveloper\\repos\\GameStore\\Backend\\src\\GameStore.Api\\wwwroot\\GameImages\\e0ff8f77-70a9-4201-9213-f8a05aa5d6b2.jpg",
       "PackagePath": "staticwebassets\\GameImages\\e0ff8f77-70a9-4201-9213-f8a05aa5d6b2.jpg"
     },

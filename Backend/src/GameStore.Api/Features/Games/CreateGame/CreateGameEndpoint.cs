@@ -28,7 +28,9 @@ public static class CreateGameEndpoint
                 return Results.Unauthorized();
             }
 
-            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Email) 
+                                ?? user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+                                
             if (string.IsNullOrEmpty(currentUserId))
             {
                 return Results.Unauthorized();

@@ -13,18 +13,20 @@ public static class UpdateGameEndpoint
     public static void MapUpdateGame(this IEndpointRouteBuilder app)
     {
         // PUT /games/1
-        app.MapPut("/{id}", async (Guid id, 
-                                   [FromForm] UpdateGameDto gameDto, 
+        app.MapPut("/{id}", async (Guid id,
+                                   [FromForm] UpdateGameDto gameDto,
                                    GameStoreContext dbContext,
                                    FileUploader fileUploader,
                                    ClaimsPrincipal user) =>
         {
-            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            var currentUserId = user?.FindFirstValue(JwtRegisteredClaimNames.Email)
+                                ?? user?.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
             if (string.IsNullOrEmpty(currentUserId))
             {
                 return Results.Unauthorized();
             }
-            
+
             var existingGame = await dbContext.Games.FindAsync(id);
 
             if (existingGame is null)
@@ -56,6 +58,6 @@ public static class UpdateGameEndpoint
             return Results.NoContent();
         }).WithParameterValidation()
           .DisableAntiforgery()
-          .RequireAuthorization(Policies.AdminAccess);;
+          .RequireAuthorization(Policies.AdminAccess); ;
     }
 }

@@ -5,6 +5,7 @@ using GameStore.Api.Features.Genres;
 using GameStore.Api.Shared.Authorization;
 using GameStore.Api.Shared.ErrorHandling;
 using GameStore.Api.Shared.FileUpload;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
@@ -35,13 +36,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpContextAccessor().AddSingleton<FileUploader>();
 
-builder.Services.AddAuthentication()
-                .AddJwtBearer(options =>
-                {
-                    options.MapInboundClaims = false;
-                    options.TokenValidationParameters.RoleClaimType = "role";
-                });
-
+builder.AddGameStoreAuthentication();
 builder.AddGameStoreAuthorization(); // Extended
 builder.Services.AddSingleton<IAuthorizationHandler, BasketAuthorizationHandler>();
 
